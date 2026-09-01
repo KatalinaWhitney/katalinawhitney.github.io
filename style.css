@@ -189,47 +189,86 @@ nav h1 {
   position: fixed;
   left: 0;
   top: 0;
-  width: 10px;
-  height: 10px;
+  width: 18px;
+  height: 18px;
   background: #d99189;
   border-radius: 2px;
   opacity: 0;
   pointer-events: none;
   transform: rotate(45deg) scale(0.4);
   box-shadow:
+    5vw 8vh 0 #d99189,
     12vw 18vh 0 #d99189,
+    20vw 5vh 0 #d99189,
     24vw 34vh 0 #d99189,
     36vw 12vh 0 #d99189,
+    44vw 42vh 0 #d99189,
     52vw 26vh 0 #d99189,
+    60vw 8vh 0 #d99189,
     68vw 18vh 0 #d99189,
+    76vw 38vh 0 #d99189,
     82vw 36vh 0 #d99189,
+    90vw 12vh 0 #d99189,
+    8vw 52vh 0 #d99189,
     15vw 52vh 0 #d99189,
+    22vw 68vh 0 #d99189,
     30vw 64vh 0 #d99189,
+    38vw 48vh 0 #d99189,
     46vw 58vh 0 #d99189,
+    54vw 42vh 0 #d99189,
     62vw 72vh 0 #d99189,
+    70vw 50vh 0 #d99189,
     78vw 66vh 0 #d99189,
+    86vw 75vh 0 #d99189,
     92vw 52vh 0 #d99189,
+    12vw 82vh 0 #d99189,
     18vw 82vh 0 #d99189,
+    28vw 92vh 0 #d99189,
     38vw 88vh 0 #d99189,
+    48vw 95vh 0 #d99189,
     58vw 84vh 0 #d99189,
+    68vw 92vh 0 #d99189,
     74vw 92vh 0 #d99189,
-    90vw 80vh 0 #d99189;
+    82vw 86vh 0 #d99189,
+    90vw 80vh 0 #d99189,
+    96vw 42vh 0 #d99189;
 }
 
 .nav-li a::after {
   background: #f8e4e1;
   box-shadow:
     8vw 28vh 0 #f8e4e1,
+    16vw 15vh 0 #f8e4e1,
     20vw 48vh 0 #f8e4e1,
+    28vw 22vh 0 #f8e4e1,
+    40vw 62vh 0 #f8e4e1,
     42vw 40vh 0 #f8e4e1,
+    50vw 18vh 0 #f8e4e1,
     56vw 48vh 0 #f8e4e1,
+    64vw 28vh 0 #f8e4e1,
     72vw 42vh 0 #f8e4e1,
+    80vw 58vh 0 #f8e4e1,
     88vw 24vh 0 #f8e4e1,
+    94vw 70vh 0 #f8e4e1,
     10vw 68vh 0 #f8e4e1,
+    18vw 45vh 0 #f8e4e1,
     26vw 78vh 0 #f8e4e1,
+    34vw 35vh 0 #f8e4e1,
+    42vw 75vh 0 #f8e4e1,
     48vw 76vh 0 #f8e4e1,
+    56vw 62vh 0 #f8e4e1,
     66vw 64vh 0 #f8e4e1,
+    74vw 48vh 0 #f8e4e1,
     84vw 74vh 0 #f8e4e1,
+    92vw 30vh 0 #f8e4e1,
+    6vw 92vh 0 #f8e4e1,
+    22vw 88vh 0 #f8e4e1,
+    32vw 78vh 0 #f8e4e1,
+    44vw 95vh 0 #f8e4e1,
+    52vw 72vh 0 #f8e4e1,
+    62vw 88vh 0 #f8e4e1,
+    72vw 82vh 0 #f8e4e1,
+    80vw 92vh 0 #f8e4e1,
     96vw 68vh 0 #f8e4e1;
 }
 
