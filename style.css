@@ -143,6 +143,21 @@ nav h1 {
   color: #f8e4e1;
 }
 
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) scale(0.8);
+  }
+}
+
 #nav-ul {
   list-style: none;
   display: flex;
@@ -181,9 +196,6 @@ nav h1 {
   opacity: 0;
   pointer-events: none;
   transform: rotate(45deg) scale(0.4);
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease;
   box-shadow:
     12vw 18vh 0 #d99189,
     24vw 34vh 0 #d99189,
@@ -227,10 +239,12 @@ nav h1 {
   transform: translateY(-2px);
 }
 
-.nav-li a:hover::before,
+.nav-li a:hover::before {
+  animation: sparkle 2s ease-in-out forwards;
+}
+
 .nav-li a:hover::after {
-  opacity: 1;
-  transform: rotate(45deg) scale(1);
+  animation: sparkle 2s ease-in-out forwards 0.3s;
 }
 /* Portfolio styles */
 .content h1 {
