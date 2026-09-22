@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Runtime Neo</title>
-    <link rel="stylesheet" href="runtime.css" />
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="setup.js"></script>
-    <script src="levels.js"></script>
-    <script src="scenery.js"></script>
-    <script src="student.js"></script>
-    <script src="main.js"></script>
-  </head>
-  <body id="body">
-    <canvas id="gameCanvas" width="1400" height="750"></canvas>
-    <img id="player" src="images/halle.png" />
-    <img id="projectile" src="images/projectile.png" />
-    <img id="basicPlatform" src="images/interactable/basicPlatform.png" />
-    <img id="spikes" src="images/interactable/spikes.png" />
-    <img id="bug" src="images/interactable/bug.png" />
-    <img id="healthUp" src="images/interactable/healthUp.png" />
-    <img id="flag" src="images/interactable/flag.png" />
-    <img id="moon" src="images/backgrounds/moon.png" />
-    <img id="building" src="images/backgrounds/building.png" />
-    <img id="lamp" src="images/backgrounds/lamp.png" />
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Runtime Neo</title>
+  <link rel="stylesheet" href="runtime.css" />
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="setup.js"></script>
+  <script src="levels.js"></script>
+  <script src="scenery.js"></script>
+  <script src="student.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body id="body">
+  <nav
+    style="position: fixed; top: 10px; left: 10px; background: rgba(255,255,255,0.9); padding: 10px 15px; border-radius: 8px; z-index: 1000;">
+    <a href="../../index.html"
+      style="margin-right: 15px; text-decoration: none; color: #d99189; font-weight: 500;">Home</a>
+    <a href="../../portfolio.html" style="text-decoration: none; color: #d99189; font-weight: 500;">Portfolio</a>
+  </nav>
+  <canvas id="gameCanvas" width="1400" height="750"></canvas>
+  <img id="player" src="images/halle.png" />
+  <img id="projectile" src="images/projectile.png" />
+  <img id="basicPlatform" src="images/interactable/basicPlatform.png" />
+  <img id="spikes" src="images/interactable/spikes.png" />
+  <img id="bug" src="images/interactable/bug.png" />
+  <img id="healthUp" src="images/interactable/healthUp.png" />
+  <img id="flag" src="images/interactable/flag.png" />
+  <img id="moon" src="images/backgrounds/moon.png" />
+  <img id="building" src="images/backgrounds/building.png" />
+  <img id="lamp" src="images/backgrounds/lamp.png" />
+</body>
+
 </html>
