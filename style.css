@@ -16,11 +16,124 @@ body {
   padding: 32px 40px;
 }
 main {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(220px, 1fr) minmax(420px, 1.6fr);
   align-items: center;
   min-height: calc(100vh - 160px);
   gap: clamp(32px, 5vw, 80px);
+}
+
+.clock-card {
+  position: absolute;
+  z-index: 2;
+  top: 24px;
+  right: 0;
+  min-width: 190px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #edd1cd;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(208, 123, 117, 0.12);
+  text-align: right;
+  backdrop-filter: blur(8px);
+}
+
+.clock-label {
+  display: block;
+  margin-bottom: 4px;
+  color: #d99189;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+#clock {
+  color: #d07b75;
+  font-size: 1.25rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
+
+.rose-garden {
+  position: fixed;
+  z-index: 3;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.rose {
+  position: absolute;
+  top: -90px;
+  display: block;
+  font-size: 58px;
+  filter: drop-shadow(0 8px 8px rgba(208, 123, 117, 0.18));
+  transform-origin: bottom center;
+  animation: rose-fall 9s linear infinite;
+}
+
+.rose-one {
+  left: 8%;
+  animation-duration: 8s;
+}
+
+.rose-two {
+  left: 26%;
+  font-size: 68px;
+  animation-delay: -5s;
+  animation-duration: 11s;
+}
+
+.rose-three {
+  left: 44%;
+  animation-delay: -2s;
+  animation-duration: 7.5s;
+}
+
+.rose-four {
+  left: 58%;
+  font-size: 48px;
+  animation-delay: -7s;
+  animation-duration: 10s;
+}
+
+.rose-five {
+  left: 74%;
+  font-size: 64px;
+  animation-delay: -3.5s;
+  animation-duration: 12s;
+}
+
+.rose-six {
+  left: 90%;
+  font-size: 52px;
+  animation-delay: -8.5s;
+  animation-duration: 8.5s;
+}
+
+@keyframes rose-fall {
+  0% {
+    transform: translate3d(0, -100px, 0) rotate(-20deg);
+  }
+
+  25% {
+    transform: translate3d(32px, 28vh, 0) rotate(24deg);
+  }
+
+  50% {
+    transform: translate3d(-24px, 58vh, 0) rotate(-18deg);
+  }
+
+  75% {
+    transform: translate3d(28px, 82vh, 0) rotate(30deg);
+  }
+
+  100% {
+    transform: translate3d(-12px, calc(100vh + 120px), 0) rotate(-12deg);
+  }
 }
 
 .sidebar {
@@ -284,6 +397,30 @@ nav h1 {
 
 .nav-li a:hover::after {
   animation: sparkle 2s ease-in-out forwards 0.3s;
+}
+
+@media (max-width: 760px) {
+  #all-contents {
+    padding: 20px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: 90px;
+  }
+
+  .clock-card {
+    top: 0;
+  }
+
+  .rose-garden {
+    opacity: 0.75;
+  }
+
+  h2 {
+    font-size: clamp(3.25rem, 18vw, 5rem);
+  }
 }
 /* Portfolio styles */
 .content h1 {

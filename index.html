@@ -18,6 +18,20 @@
     </nav>
 
     <main>
+      <div class="clock-card" aria-label="Local time">
+        <span class="clock-label">The time is</span>
+        <time id="clock" datetime="">--:--</time>
+      </div>
+
+      <div class="rose-garden" aria-label="Decorative roses">
+        <span class="rose rose-one" aria-hidden="true">🌹</span>
+        <span class="rose rose-two" aria-hidden="true">🌹</span>
+        <span class="rose rose-three" aria-hidden="true">🌹</span>
+        <span class="rose rose-four" aria-hidden="true">🌹</span>
+        <span class="rose rose-five" aria-hidden="true">🌹</span>
+        <span class="rose rose-six" aria-hidden="true">🌹</span>
+      </div>
+
       <div class="sidebar">
         <div class="sidebar">
           <img class="sidebar-img" src="https://i.pinimg.com/736x/6f/11/4c/6f114cb43183a513dde061b79b7700c3.jpg"
@@ -43,6 +57,23 @@
   </div>
 
   </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const clock = document.getElementById("clock");
+
+      clock.textContent = now.toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      });
+      clock.dateTime = now.toISOString();
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
 </body>
 
 </html>
